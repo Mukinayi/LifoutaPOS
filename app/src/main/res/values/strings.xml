@@ -93,6 +93,11 @@
     <string name="transfees">Frais de transaction</string>
     <string name="accountcheck">Numéro du compte</string>
     <string name="check">Vérifier</string>
+    <string name="clienttype">Type client</string>
+    <string name="soldecompte">Solde du compte</string>
+    <string name="etatcompte">Etat du compte</string>
+    <string name="printtext">impression</string>
+    <string name="cancel">Annuler</string>
 
 
 </resources>

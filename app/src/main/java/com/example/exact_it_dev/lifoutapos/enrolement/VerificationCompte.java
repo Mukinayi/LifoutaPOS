@@ -1,5 +1,6 @@
 package com.example.exact_it_dev.lifoutapos.enrolement;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.exact_it_dev.lifoutapos.DetailsCompte;
 import com.example.exact_it_dev.lifoutapos.R;
 import com.example.exact_it_dev.lifoutapos.network.NetworkConnection;
 import com.kosalgeek.genasync12.AsyncResponse;
@@ -68,12 +70,22 @@ public class VerificationCompte extends AppCompatActivity {
                                         }else{
                                             JSONObject jsonObject = jsonArray.getJSONObject(0);
                                             Toast.makeText(getApplicationContext(),"Très bien",Toast.LENGTH_SHORT).show();
-                                            btncheck.setText("Vérifier");
-                                            btncheck.setEnabled(true);
-                                            progressBar.setVisibility(View.GONE);
+                                            Intent details = new Intent(getApplicationContext(), DetailsCompte.class);
+                                            details.putExtra("prenom",jsonObject.getString("prenomcli"));
+                                            details.putExtra("nom",jsonObject.getString("nomcli"));
+                                            details.putExtra("sexe",jsonObject.getString("sexecli"));
+                                            details.putExtra("phone",jsonObject.getString("portablecli"));
+                                            details.putExtra("clienttype",jsonObject.getString("clienttype"));
+                                            details.putExtra("numcompte",jsonObject.getString("numcompte"));
+                                            details.putExtra("solde",jsonObject.getString("solde"));
+                                            details.putExtra("comptestatus",jsonObject.getString("comptestatus"));
+                                            startActivity(details);
                                         }
                                     }catch (JSONException e){
                                         Toast.makeText(getApplicationContext(),"Erreur JSON",Toast.LENGTH_SHORT).show();
+                                        btncheck.setText("Vérifier");
+                                        btncheck.setEnabled(true);
+                                        progressBar.setVisibility(View.GONE);
                                     }
                                 }
                             });
