@@ -9,7 +9,6 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.example.exact_it_dev.lifoutapos.DetailsCompte;
 import com.example.exact_it_dev.lifoutapos.R;
 import com.example.exact_it_dev.lifoutapos.network.NetworkConnection;
 import com.kosalgeek.genasync12.AsyncResponse;

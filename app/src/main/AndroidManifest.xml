@@ -54,7 +54,7 @@
         <activity android:name=".transfert.ConfirmationOTPTransfert" />
         <activity android:name=".FraisTransaction" />
         <activity android:name=".enrolement.VerificationCompte" />
-        <activity android:name=".DetailsCompte"></activity>
+        <activity android:name=".enrolement.DetailsCompte"></activity>
     </application>
 
 </manifest>
