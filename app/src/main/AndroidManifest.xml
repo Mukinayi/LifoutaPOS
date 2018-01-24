@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.exact_it_dev.lifoutapos"
-    >
+    android:sharedUserId="android.uid.system">
 
     <!-- android:sharedUserId="android.uid.system" -->
 
@@ -55,7 +55,8 @@
         <activity android:name=".transfert.ConfirmationOTPTransfert" />
         <activity android:name=".FraisTransaction" />
         <activity android:name=".enrolement.VerificationCompte" />
-        <activity android:name=".enrolement.DetailsCompte"></activity>
+        <activity android:name=".enrolement.DetailsCompte" />
+        <activity android:name=".ChangementPin"></activity>
     </application>
 
 </manifest>

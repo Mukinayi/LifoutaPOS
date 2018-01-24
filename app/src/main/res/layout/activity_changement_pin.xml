@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.exact_it_dev.lifoutapos.ChangementPin"
+    android:padding="5dp"
+    android:background="@drawable/lifback"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/progresspin"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:text="@string/oldpin"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:hint="@string/oldpin"
+        android:background="@drawable/input"
+        android:id="@+id/etoldpin"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:text="@string/newpin"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:hint="@string/newpin"
+        android:background="@drawable/input"
+        android:id="@+id/newpin"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:text="@string/confirmpin"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:hint="@string/confirmpin"
+        android:background="@drawable/input"
+        android:id="@+id/confirmpin"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/btnpin"
+        android:text="@string/btnpin"
+        android:background="@drawable/button"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"/>
+
+
+</LinearLayout>

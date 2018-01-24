@@ -98,6 +98,11 @@
     <string name="etatcompte">Etat du compte</string>
     <string name="printtext">impression</string>
     <string name="cancel">Annuler</string>
+    <string name="pinchange">Changement PIN</string>
+    <string name="oldpin">Ancien PIN</string>
+    <string name="newpin">Nouveau PIN</string>
+    <string name="confirmpin">Confirmer nouveau PIN</string>
+    <string name="btnpin">Modifier le PIN</string>
 
 
 </resources>
