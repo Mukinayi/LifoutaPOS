@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.exact_it_dev.lifoutapos"
-    android:sharedUserId="android.uid.system">
+    package="com.example.exact_it_dev.lifoutapos">
 
     <!-- android:sharedUserId="android.uid.system" -->
 
@@ -56,7 +55,8 @@
         <activity android:name=".FraisTransaction" />
         <activity android:name=".enrolement.VerificationCompte" />
         <activity android:name=".enrolement.DetailsCompte" />
-        <activity android:name=".ChangementPin"></activity>
+        <activity android:name=".moncompte.ChangementPin" />
+        <activity android:name=".moncompte.MonCompte"></activity>
     </application>
 
 </manifest>

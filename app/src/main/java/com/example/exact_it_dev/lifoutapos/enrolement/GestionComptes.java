@@ -26,8 +26,6 @@ public class GestionComptes extends AppCompatActivity {
 
         btnnacc = (Button)findViewById(R.id.btnNewAccount);
         btnchckacc = (Button)findViewById(R.id.btnCheckAccount);
-        btnreprint = (Button) findViewById(R.id.btnReprintAccount);
-        btnnfc = (Button)findViewById(R.id.btnScanNFC);
         networkConnection = new NetworkConnection(this);
 
         btnnacc.setOnClickListener(new View.OnClickListener() {

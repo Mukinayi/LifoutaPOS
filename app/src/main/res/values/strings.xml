@@ -103,6 +103,8 @@
     <string name="newpin">Nouveau PIN</string>
     <string name="confirmpin">Confirmer nouveau PIN</string>
     <string name="btnpin">Modifier le PIN</string>
+    <string name="showsolde">Consulter le solde</string>
+    <string name="transactions">Transactions effectuées</string>
 
 
 </resources>

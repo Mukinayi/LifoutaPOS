@@ -15,6 +15,7 @@ import com.example.exact_it_dev.lifoutapos.bouquets.BouquetNumeriques;
 import com.example.exact_it_dev.lifoutapos.cashin.Cashin;
 import com.example.exact_it_dev.lifoutapos.cashout.Cashout;
 import com.example.exact_it_dev.lifoutapos.enrolement.GestionComptes;
+import com.example.exact_it_dev.lifoutapos.moncompte.MonCompte;
 import com.example.exact_it_dev.lifoutapos.payer.Payer;
 import com.example.exact_it_dev.lifoutapos.servicespublics.snde.PaiementSNDE;
 import com.example.exact_it_dev.lifoutapos.servicespublics.sne.PaiementSNE;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     Button bouquets;
     Button payer;
     Playsound playsound;
+    Button moncomptebtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -151,6 +153,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button moncomptebtn = (Button)findViewById(R.id.moncomptebtn);
+        moncomptebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent compte = new Intent(getApplicationContext(), MonCompte.class);
+                startActivity(compte);
+            }
+        });
 
 
 

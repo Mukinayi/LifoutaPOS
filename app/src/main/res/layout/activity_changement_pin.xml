@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.exact_it_dev.lifoutapos.ChangementPin"
+    tools:context="com.example.exact_it_dev.lifoutapos.moncompte.ChangementPin"
     android:padding="5dp"
     android:background="@drawable/lifback"
     android:orientation="vertical">
@@ -30,7 +30,8 @@
         android:hint="@string/oldpin"
         android:background="@drawable/input"
         android:id="@+id/etoldpin"
-        android:layout_marginBottom="5dp"/>
+        android:layout_marginBottom="5dp"
+        android:inputType="numberPassword"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -45,8 +46,9 @@
         android:layout_width="match_parent"
         android:hint="@string/newpin"
         android:background="@drawable/input"
-        android:id="@+id/newpin"
-        android:layout_marginBottom="5dp"/>
+        android:id="@+id/etnewpin"
+        android:layout_marginBottom="5dp"
+        android:inputType="numberPassword"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -61,8 +63,9 @@
         android:layout_width="match_parent"
         android:hint="@string/confirmpin"
         android:background="@drawable/input"
-        android:id="@+id/confirmpin"
-        android:layout_marginBottom="5dp"/>
+        android:id="@+id/etconfirmpin"
+        android:layout_marginBottom="5dp"
+        android:inputType="numberPassword"/>
 
     <Button
         android:layout_width="match_parent"

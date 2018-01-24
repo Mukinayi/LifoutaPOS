@@ -160,7 +160,7 @@
                 />
 
             <Button
-                android:id="@+id/moncompte"
+                android:id="@+id/moncomptebtn"
                 style="@android:style/Widget.Button"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
