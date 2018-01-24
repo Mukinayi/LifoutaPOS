@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.exact_it_dev.lifoutapos">
+
+    <!-- android:sharedUserId="android.uid.system" -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".enrolement.Enrolement" />
+        <activity android:name=".cashin.Cashin" />
+        <activity android:name=".cashout.Cashout" />
+        <activity android:name=".virement.Virement" />
+        <activity android:name=".transfert.TransfertCashToCash" />
+        <activity android:name=".servicespublics.sne.PaiementSNE" />
+        <activity android:name=".servicespublics.snde.PaiementSNDE" />
+        <activity android:name=".payer.Payer" />
+        <activity android:name=".bouquets.BouquetNumeriques" />
+        <activity android:name=".bouquets.canalplus.Canalplus" />
+        <activity android:name=".bouquets.startimes.Startimes" />
+        <activity android:name=".bouquets.dstv.DSTV" />
+        <activity android:name=".bouquets.easytv.EasyTV" />
+        <activity android:name=".airtimes.Airtimes" />
+        <activity android:name=".airtimes.airtel.AirtelAirtime" />
+        <activity android:name=".airtimes.mtn.MTNAirtime" />
+        <activity android:name=".airtimes.congotelecom.CongotelecomAirtime" />
+        <activity android:name=".airtimes.azure.AzureAirtime" />
+        <activity android:name=".settings.Settings" />
+        <activity android:name=".Inattribue" />
+        <activity android:name=".ConfirmationTrasaction" />
+        <activity android:name=".enrolement.CompteStatus" />
+        <activity android:name=".enrolement.GestionComptes" />
+        <activity android:name=".transfert.TransfertBoard" />
+        <activity android:name=".transfert.TransfertCompteToCash" />
+        <activity android:name=".transfert.WithdrawTransfert" />
+        <activity android:name=".transfert.ResultTransfertVerification" />
+        <activity android:name=".transfert.ConfirmationRetraitTransfert" />
+        <activity android:name=".transfert.ConfirmationOTPTransfert" />
+        <activity android:name=".FraisTransaction" />
+        <activity android:name=".enrolement.VerificationCompte" />
+        <activity android:name=".DetailsCompte"></activity>
+    </application>
+
+</manifest>

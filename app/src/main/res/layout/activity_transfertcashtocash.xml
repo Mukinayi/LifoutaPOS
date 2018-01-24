@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.exact_it_dev.lifoutapos.transfert.TransfertCashToCash"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/lifback">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progresscashtocash"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/prenomexp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/etprenomexp"
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:hint="@string/prenomexp"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:layout_height="45dp"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/nomexp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/etnomexp"
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:hint="@string/nomexp"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:layout_height="45dp"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/phonexp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+
+            <EditText
+                android:id="@+id/etphoneexp"
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:hint="@string/phonexp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:layout_height="45dp"
+                android:inputType="phone"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/typeidexp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/spinnertypeidentiteexp"
+                android:background="@drawable/input"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/idnumberexp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/etidnumberexp"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:hint="@string/idnumberexp"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/transfertmontant"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/ettransfertmontant"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:hint="@string/transfertmontant"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/prenombenef"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/etprenombenef"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:hint="@string/prenombenef"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/nombenef"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/etnombenef"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:hint="@string/nombenef"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/phonebenef"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/etphonebenef"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:hint="@string/phonebenef"
+                android:inputType="phone" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/pinexpeditor"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/etpinexped"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:hint="@string/pinexpeditor"
+                android:inputType="numberPassword" />
+
+
+            <Button
+                android:id="@+id/btntranscashtocash"
+                android:background="@drawable/button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="@string/valider"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

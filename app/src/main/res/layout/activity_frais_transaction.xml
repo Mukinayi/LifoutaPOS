@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.exact_it_dev.lifoutapos.FraisTransaction"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/lifback">
+
+    <ProgressBar
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/progressfaistransaction"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:text="@string/transtype"
+                android:layout_marginBottom="5dp"/>
+
+            <Spinner
+                android:layout_height="45dp"
+                android:layout_width="match_parent"
+                android:id="@+id/spinnertransfees"
+                android:background="@drawable/input"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:text="@string/transamount"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/etamount"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/input"
+                android:inputType="numberDecimal"
+                android:textSize="18sp"
+                android:hint="@string/transamount"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/btngo"
+                android:layout_height="45dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/button"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:text="@string/valider"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:text="@string/transfees"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/transamounttext"
+                android:text="0.0 CFA"
+                android:gravity="center_horizontal"
+                android:textSize="50sp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>

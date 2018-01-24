@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.exact_it_dev.lifoutapos.payer.Payer"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/lifback">
+
+    <ProgressBar
+        android:id="@+id/progresspayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <ScrollView
+        style="@android:style/Widget.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accountnumberclient"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <EditText
+                android:id="@+id/etnumcomptepayer"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:hint="@string/accountnumberclient"
+                android:inputType="number" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/invoicenumber"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <EditText
+                android:id="@+id/etinvoicenumber"
+                android:layout_width="match_parent"
+                android:background="@drawable/input"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:hint="@string/invoicenumber"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/payamount"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <EditText
+                android:id="@+id/etpayamount"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:background="@drawable/input"
+                android:hint="Montant à débiter"
+                android:inputType="numberDecimal" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/payreason"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <EditText
+                android:id="@+id/etpaydescription"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:background="@drawable/input"
+                android:hint="Description du paiement"
+                android:inputType="text" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/clientpin"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <EditText
+                android:id="@+id/etpaypin"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:background="@drawable/input"
+                android:hint="****"
+                android:inputType="numberPassword"
+                android:layout_marginBottom="5dp"/>
+
+
+            <Button
+                android:id="@+id/buttonpay"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Proceder"
+                android:background="@drawable/button"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.v7.widget.LinearLayoutCompat>

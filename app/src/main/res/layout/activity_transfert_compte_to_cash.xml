@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.exact_it_dev.lifoutapos.transfert.TransfertCompteToCash"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/lifback">
+
+    <ProgressBar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/progresscomptetocash"
+    android:visibility="gone"
+    />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/transfertmontant"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/ettransmontant"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:hint="@string/transfertmontant"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/prenombenef"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/etprenombene"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:hint="@string/prenombenef"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/nombenef"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/etnombene"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:hint="@string/nombenef"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/phonebenef"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/etphonebene"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:hint="@string/phonebenef"
+                android:inputType="phone" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/pinexpeditor"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/etpinexp"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:hint="@string/pinexpeditor"
+                android:inputType="numberPassword" />
+
+
+            <Button
+                android:id="@+id/btntranscomptetocash"
+                android:background="@drawable/button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="@string/valider"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

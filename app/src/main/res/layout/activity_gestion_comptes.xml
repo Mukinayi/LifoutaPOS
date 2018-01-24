@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.exact_it_dev.lifoutapos.enrolement.GestionComptes"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/lifback">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <Button
+                android:layout_height="45dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/buttonhome"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:text="@string/newaccount"
+                android:textSize="18sp"
+                android:id="@+id/btnNewAccount"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:layout_height="45dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/buttonhome"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:text="@string/checkaccount"
+                android:textSize="18sp"
+                android:id="@+id/btnCheckAccount"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:layout_height="45dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/buttonhome"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:text="@string/reprintaccount"
+                android:textSize="18sp"
+                android:id="@+id/btnReprintAccount"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:layout_height="45dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/buttonhome"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:text="@string/scannfc"
+                android:textSize="18sp"
+                android:id="@+id/btnScanNFC"
+                android:layout_marginBottom="5dp"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

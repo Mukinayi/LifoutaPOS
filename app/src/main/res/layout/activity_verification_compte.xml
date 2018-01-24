@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.exact_it_dev.lifoutapos.enrolement.VerificationCompte"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/lifback">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progresscheck"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#fff"
+        android:text="@string/accountcheck"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/input"
+        android:id="@+id/etacc"
+        android:hint="@string/accountcheck"
+        android:inputType="number"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:id="@+id/btncheck"
+        android:background="@drawable/button"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/check"/>
+
+</LinearLayout>
