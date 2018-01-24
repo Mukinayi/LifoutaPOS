@@ -2,6 +2,7 @@ package com.example.exact_it_dev.lifoutapos.cashin;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -143,6 +144,19 @@ public class Cashin extends AppCompatActivity implements SwipeListener {
                                             playsound.jouer(R.raw.pinagentincorrecte,"PIN Agent incorrect");
                                             break;
 
+                                        case "186":
+                                            btncashin.setText("Valider");
+                                            btncashin.setEnabled(true);
+                                            cashinProgressBar.setVisibility(View.GONE);
+                                            Toast.makeText(getApplicationContext(),"Echec dépot",Toast.LENGTH_SHORT).show();
+                                            break;
+                                        case "187":
+                                            btncashin.setText("Valider");
+                                            btncashin.setEnabled(true);
+                                            cashinProgressBar.setVisibility(View.GONE);
+                                            Toast.makeText(getApplicationContext(),"Dépot déjà effectué, vérifier votre solde",Toast.LENGTH_SHORT).show();
+                                            break;
+
                                         case "":
                                             playsound.jouer(R.raw.noresponse,"Aucune réponse du serveur");
                                             btncashin.setText("Valider");
@@ -165,7 +179,9 @@ public class Cashin extends AppCompatActivity implements SwipeListener {
                                             }
                                             break;
 
+
                                     }
+                                    Log.i("resul",s);
                                 }
                             });
                             requette.execute(storedUrl+"/lifoutacourant/APIS/depot.php");
