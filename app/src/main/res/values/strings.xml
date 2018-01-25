@@ -105,6 +105,8 @@
     <string name="btnpin">Modifier le PIN</string>
     <string name="showsolde">Consulter le solde</string>
     <string name="transactions">Transactions effectuées</string>
+    <string name="mysolde">Information du Solde</string>
+    <string name="zerovalue">0.0</string>
 
 
 </resources>
