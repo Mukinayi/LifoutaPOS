@@ -50,6 +50,7 @@ public class MonCompte extends AppCompatActivity {
                 pDialog.setCancelable(false);
                 pDialog.setIndeterminate(true);
                 pDialog.setMessage("Chargement ...");
+                pDialog.setProgressStyle(R.style.AppTheme);
                 pDialog.show();
                 if(networkConnection.isConnected()){
                     pDialog.setMessage("Recupération du solde");
@@ -57,14 +58,21 @@ public class MonCompte extends AppCompatActivity {
                         PostResponseAsyncTask solde = new PostResponseAsyncTask(getApplicationContext(), dataSolde, false, new AsyncResponse() {
                             @Override
                             public void processFinish(String s) {
-                                if(!s.equals("180")){
-                                    Intent soldeintent = new Intent(MonCompte.this,MonSolde.class);
-                                    soldeintent.putExtra("solde",s);
-                                    startActivity(soldeintent);
-                                    finish();
-                                }else{
-                                    pDialog.dismiss();
-                                    Toast.makeText(getApplicationContext(),"numéro du compte inconnu",Toast.LENGTH_SHORT).show();
+                                switch(s){
+                                    case "":
+                                        pDialog.dismiss();
+                                        Toast.makeText(getApplicationContext(),"Aucune reponse",Toast.LENGTH_SHORT).show();
+                                        break;
+                                    case "180":
+                                        pDialog.dismiss();
+                                        Toast.makeText(getApplicationContext(),"numéro du compte inconnu",Toast.LENGTH_SHORT).show();
+                                        break;
+                                    default:
+                                        Intent soldeintent = new Intent(MonCompte.this,MonSolde.class);
+                                        soldeintent.putExtra("solde",s);
+                                        startActivity(soldeintent);
+                                        finish();
+                                        break;
                                 }
                             }
                         });
@@ -78,6 +86,14 @@ public class MonCompte extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Erreur connexion internet",Toast.LENGTH_SHORT).show();
                 }
 
+            }
+        });
+
+        btntransactions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),TransactionsGenerales.class);
+                startActivity(intent);
             }
         });
 

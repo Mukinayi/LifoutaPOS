@@ -107,6 +107,9 @@
     <string name="transactions">Transactions effectuées</string>
     <string name="mysolde">Information du Solde</string>
     <string name="zerovalue">0.0</string>
+    <string name="totaltransaction">Nombre de Transaction</string>
+    <string name="tottransamount">Montant Total Transactions</string>
+    <string name="mycommission">Ma commission</string>
 
 
 </resources>
