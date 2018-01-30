@@ -17,7 +17,7 @@ import com.kosalgeek.genasync12.PostResponseAsyncTask;
 import java.util.HashMap;
 
 public class MonCompte extends AppCompatActivity {
-    Button btnpinchange,btnsolde,btntransactions;
+    Button btnpinchange,btnsolde,btntransactions,btnfromto;
     ProgressDialog pDialog;
     NetworkConnection networkConnection;
     @Override
@@ -28,6 +28,7 @@ public class MonCompte extends AppCompatActivity {
         btnpinchange = (Button)findViewById(R.id.btnpinchange);
         btnsolde = (Button)findViewById(R.id.btnsolde);
         btntransactions = (Button)findViewById(R.id.btntransactions);
+        btnfromto = (Button)findViewById(R.id.btnfromto);
         networkConnection = new NetworkConnection(this);
         final String CurrentURL = networkConnection.StoredUrl();
         final String myaccount = networkConnection.StoredProfile("profnumcompte");
@@ -39,7 +40,6 @@ public class MonCompte extends AppCompatActivity {
                 startActivity(changepin);
             }
         });
-
 
         btnsolde.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,6 +93,14 @@ public class MonCompte extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),TransactionsGenerales.class);
+                startActivity(intent);
+            }
+        });
+
+        btnfromto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),TransactionsByDateFromTo.class);
                 startActivity(intent);
             }
         });

@@ -108,8 +108,14 @@
     <string name="mysolde">Information du Solde</string>
     <string name="zerovalue">0.0</string>
     <string name="totaltransaction">Nombre de Transaction</string>
-    <string name="tottransamount">Montant Total Transactions</string>
+    <string name="tottransamount">Montant Total</string>
     <string name="mycommission">Ma commission</string>
+    <string name="startdate">Période de 2018-01-01</string>
+    <string name="toperiod">à 2018-06-01</string>
+    <string name="startto">De 2018-01-01</string>
+    <string name="search">Recherche</string>
+    <string name="generaltrans">Transactions Générales</string>
+    <string name="transdatebtn">Transactions par période</string>
 
 
 </resources>

@@ -6,8 +6,7 @@
     android:orientation="vertical"
     android:padding="5dp"
     android:background="@drawable/sethlistview"
-    android:layout_marginBottom="25dp"
-    android:layout_marginTop="25dp">
+    >
 
 
     <TextView
@@ -17,9 +16,9 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="17dp"
-        android:text="TextView"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="#999"/>
 
     <TextView
         android:id="@+id/textView13"
@@ -27,7 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtViewTranstype"
         android:layout_centerHorizontal="true"
-        android:text="@string/totaltransaction" />
+        android:text="@string/totaltransaction"
+        android:textColor="#999"/>
 
     <TextView
         android:id="@+id/txtViewTranscount"
@@ -35,9 +35,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView13"
         android:layout_centerHorizontal="true"
-        android:text="TextView"
         android:textSize="42sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="#999"/>
 
     <TextView
         android:id="@+id/textView17"
@@ -49,6 +49,7 @@
         android:layout_marginLeft="11dp"
         android:layout_marginStart="11dp"
         android:layout_marginTop="13dp"
+        android:textColor="#999"
         android:text="@string/tottransamount" />
 
     <TextView
@@ -58,8 +59,8 @@
         android:layout_alignLeft="@+id/textView17"
         android:layout_alignStart="@+id/textView17"
         android:layout_below="@+id/textView17"
-        android:text="TextView"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textColor="#999"/>
 
     <TextView
         android:id="@+id/textView22"
@@ -70,7 +71,8 @@
         android:layout_alignTop="@+id/textView17"
         android:layout_marginEnd="12dp"
         android:layout_marginRight="12dp"
-        android:text="@string/mycommission" />
+        android:text="@string/mycommission"
+        android:textColor="#999"/>
 
     <TextView
         android:id="@+id/txtCommission"
@@ -79,6 +81,6 @@
         android:layout_alignEnd="@+id/textView22"
         android:layout_alignRight="@+id/textView22"
         android:layout_below="@+id/textView22"
-        android:text="TextView"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textColor="#999"/>
 </RelativeLayout>

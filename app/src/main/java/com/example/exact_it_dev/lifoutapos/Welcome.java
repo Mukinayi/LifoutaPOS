@@ -8,6 +8,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -40,12 +41,13 @@ public class Welcome extends AppCompatActivity {
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
-
-            imei = "362523432421083";
+            imei = "00000000000000000";
             //imei = "362523432421083";
         }else{
+
             imei = tm.getDeviceId();
         }
+        Log.i("imei",imei);
         final String unident = "Terminal non identifié";
         final String unass = "Terminal non assigné";
         final String connex = "Erreur Connexion internet";
@@ -59,21 +61,19 @@ public class Welcome extends AppCompatActivity {
                     @Override
                     public void processFinish(String s) {
                         switch (s){
-                            case "199":
-                                Toast.makeText(getApplicationContext(),"Terminal non identifié",Toast.LENGTH_SHORT).show();
-
-                                    Intent unassigned = new Intent(getApplicationContext(),Inattribue.class);
-                                    unassigned.putExtra("message",unident);
-                                    startActivity(unassigned);
-                                    finish();
-
-                                break;
+                            case "180":
+                                Toast.makeText(getApplicationContext(),"Terminal non reconnu",Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(Welcome.this,Inattribue.class);
+                                intent.putExtra("message",unident);
+                                startActivity(intent);
+                                finish();
+                            break;
                             case "201":
                                 Toast.makeText(getApplicationContext(),"Terminal non attribué",Toast.LENGTH_SHORT).show();
-                                    Intent unassign = new Intent(getApplicationContext(),Inattribue.class);
-                                    unassign.putExtra("message",unass);
-                                    startActivity(unassign);
-                                    finish();
+                                Intent unassign = new Intent(getApplicationContext(),Inattribue.class);
+                                unassign.putExtra("message",unass);
+                                startActivity(unassign);
+                                finish();
 
                                 break;
                             case "":
@@ -82,20 +82,22 @@ public class Welcome extends AppCompatActivity {
                                 startActivity(erserve);
                                 finish();
                                 break;
-                                default:
-                                    try{
-                                        JSONArray jsonArray = new JSONArray(s);
-                                        JSONObject jsonObject = jsonArray.getJSONObject(0);
-                                        networkConnection.StoreData(jsonObject.getString("nomcli"),jsonObject.getString("prenomcli"),jsonObject.getString("numcompte"),jsonObject.getString("agentid"),jsonObject.getString("portablecli"),jsonObject.getString("adressecli"));
-                                    }catch (JSONException e){
-                                        Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_SHORT).show();
-                                    }
-                                    Toast.makeText(getApplicationContext(),"Vérification réussie",Toast.LENGTH_SHORT).show();
-                                        Intent home = new Intent(getApplicationContext(),MainActivity.class);
-                                    startActivity(home);
-                                    finish();
-                                    break;
+                            default:
+                                try{
+                                    JSONArray jsonArray = new JSONArray(s);
+                                    JSONObject jsonObject = jsonArray.getJSONObject(0);
+                                    networkConnection.StoreData(jsonObject.getString("nomcli"),jsonObject.getString("prenomcli"),jsonObject.getString("numcompte"),jsonObject.getString("agentid"),jsonObject.getString("portablecli"),jsonObject.getString("adressecli"));
+                                }catch (JSONException e){
+                                    Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_SHORT).show();
+                                }
+                                Toast.makeText(getApplicationContext(),"Vérification réussie",Toast.LENGTH_SHORT).show();
+                                Intent home = new Intent(getApplicationContext(),MainActivity.class);
+                                startActivity(home);
+                                finish();
+                                break;
                         }
+                        Log.i("resul",s);
+
                     }
                 });
                 task.execute(storedurl+"/lifoutacourant/APIS/checkterminal.php");

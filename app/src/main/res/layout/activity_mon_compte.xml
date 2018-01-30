@@ -42,15 +42,26 @@
                 android:layout_marginBottom="5dp"/>
 
             <Button
-                android:layout_height="45dp"
-                android:layout_width="match_parent"
-                android:background="@drawable/buttonhome"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold"
-                android:text="@string/transactions"
-                android:textSize="18sp"
                 android:id="@+id/btntransactions"
-                android:layout_marginBottom="5dp"/>
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/buttonhome"
+                android:text="@string/generaltrans"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnfromto"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/buttonhome"
+                android:text="@string/transdatebtn"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>

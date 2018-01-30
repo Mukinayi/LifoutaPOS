@@ -30,7 +30,8 @@
 
             android:textColor="#f32f09"
             android:textSize="32sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            />
 
         <TextView
             android:id="@+id/textView8"

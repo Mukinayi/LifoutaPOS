@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.exact_it_dev.lifoutapos"
-    >
+    android:sharedUserId="android.uid.system">
 
     <!-- android:sharedUserId="android.uid.system" -->
 
@@ -59,7 +59,8 @@
         <activity android:name=".moncompte.ChangementPin" />
         <activity android:name=".moncompte.MonCompte" />
         <activity android:name=".moncompte.MonSolde" />
-        <activity android:name=".moncompte.TransactionsGenerales"></activity>
+        <activity android:name=".moncompte.TransactionsGenerales" />
+        <activity android:name=".moncompte.TransactionsByDateFromTo"></activity>
     </application>
 
 </manifest>
