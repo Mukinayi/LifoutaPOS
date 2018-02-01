@@ -1,59 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.exact_it_dev.lifoutapos.bouquets.canalplus.Canalplus">
+    tools:context="com.example.exact_it_dev.lifoutapos.bouquets.canalplus.Canalplus"
+    android:padding="5dp"
+    android:background="@drawable/lifback">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#CE3F32"
-        android:orientation="vertical"
-        android:padding="10dp">
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Numéro de la carte"
-            android:textAlignment="center"
-            android:textColor="#fff"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/NumeroCarteET"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#fff"
-            android:hint="Numéro de la carte"
-            android:inputType="number"
-            android:paddingLeft="10dp"
-            android:textSize="24sp"
-            android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/canalplussubscription"
+                android:textColor="#fff"
+                android:textSize="26sp"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="6dp"/>
 
-        <Button
-            android:id="@+id/button2"
-            style="@android:style/Widget.Button"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="Vérifier"
-            android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
-            android:textColor="#999"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cardnumber"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:layout_marginBottom="5dp"/>
 
-        <ProgressBar
-            android:id="@+id/CheckCardPB"
-            style="@android:style/Widget.DeviceDefault.Light.ProgressBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="gone" />
+            <EditText
+                android:id="@+id/etcardnum"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:inputType="number"
+                android:background="@drawable/input"
+                android:hint="@string/cardnumber"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/btncanalcheck"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="@string/check"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/button"/>
+        </LinearLayout>
+
+    </ScrollView>
 
 
-    </LinearLayout>
-
-
-</android.support.v7.widget.LinearLayoutCompat>
+</LinearLayout>
