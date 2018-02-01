@@ -118,6 +118,7 @@
     <string name="transdatebtn">Transactions par période</string>
     <string name="canalplussubscription">Abonnement Canal Plus</string>
     <string name="cardnumber">Numéro de la carte</string>
+    <string name="easysubscription">Abonnement Easy Tv</string>
 
 
 </resources>
